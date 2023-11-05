@@ -14,15 +14,4 @@ export default class Jokes extends AEndpoint {
     }
     return this.restClient.sendGet({ route: "/random", params });
   }
-
-  public async getJokeCategories(): Promise<AxiosResponse> {
-    return this.restClient.sendGet({ route: "/categories" });
-  }
-
-  public async searchJokes(query: string): Promise<AxiosResponse> {
-    return this.restClient.sendGet({
-      route: "/search",
-      params: { query: query },
-    });
-  }
 }
