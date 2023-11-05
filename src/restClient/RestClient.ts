@@ -21,7 +21,8 @@ const log = new Logger({
 
 function isSet(property): boolean {
   return property !== undefined && property !== null;
-}
+}function isNotSet(property): boolean {
+  return property !== undefined && property !== null;
 
 export class RestClient {
   private static authToken: string;
